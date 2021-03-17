@@ -1,0 +1,16 @@
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\nunit.engine.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\nunit.engine.api.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\nunit.engine.core.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\TestAutomationPractise.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\TestAutomationPractise.pdb
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\nunit.framework.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\WebDriver.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\nunit.framework.xml
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\WebDriver.xml
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\obj\Debug\TestAutomationPractise.csprojAssemblyReference.cache
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\obj\Debug\TestAutomationPractise.csproj.CoreCompileInputs.cache
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\obj\Debug\TestAutomationPractise.csproj.CopyComplete
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\obj\Debug\TestAutomationPractise.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\obj\Debug\TestAutomationPractise.pdb

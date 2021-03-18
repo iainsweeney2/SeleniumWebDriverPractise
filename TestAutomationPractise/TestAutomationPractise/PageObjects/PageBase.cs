@@ -12,6 +12,10 @@ namespace TestAutomationPractise.PageObjects
     {
         public IWebDriver Driver { get; set; }
 
+        private LoginPage loginPage;
+
+        public LoginPage LoginPage => loginPage = loginPage ?? new LoginPage(Driver);
+
         public PageBase(IWebDriver driver)
         {
             Driver = driver;

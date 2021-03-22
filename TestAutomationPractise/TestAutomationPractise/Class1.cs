@@ -13,12 +13,13 @@ namespace TestAutomationPractise
     public class Class1
     {
         private IWebDriver driver;
+        string url = "www.google.com";
 
         [Test]
         public void Login_is_on_home_page()
         {
             driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://www.SauceLabs.com");
+            driver.Navigate().GoToUrl(url);
         }
     }
 }

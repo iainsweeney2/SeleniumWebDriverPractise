@@ -23,6 +23,8 @@ namespace TestAutomationPractise.PageObjects
 
         public WebDriverWait Wait(int timeout = 60000) => new WebDriverWait(Driver, TimeSpan.FromMilliseconds(timeout));
 
+        public string PageTitle => Driver.Title.ToString();
+
         public void WaitForElementToBeClickable(IWebElement element)
         {
             try

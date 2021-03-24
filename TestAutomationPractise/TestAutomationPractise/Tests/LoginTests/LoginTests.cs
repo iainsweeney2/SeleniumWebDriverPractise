@@ -24,8 +24,22 @@ namespace TestAutomationPractise.Tests.LoginTests
 
             Assert.IsTrue(pageTitle == "Swag Labs");
 
-            Thread.Sleep(5000);
+        }
 
+        [Test]
+        public void LoginWithIncorrectPassword()
+        {
+            var page = NavigateToPage<LoginPage>(url);
+            page
+                .EnterUsername("standard_user")
+                .EnterPassword("secret_sauce_wrong")
+                .ClickLogin()
+                .GetErrorButtonVisibility(out bool buttonVisible);
+
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(buttonVisible);
+            });
         }
     }
 }

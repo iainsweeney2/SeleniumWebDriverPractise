@@ -10,6 +10,8 @@ namespace TestAutomationPractise.PageObjects
 {
     public class LoginPage : PageBase
     {
+        private InventoryPage inventoryPage;
+
         public LoginPage(IWebDriver driver) : base(driver) { }
 
         private IWebElement usernameTextBox => Driver.FindElementWithWait(By.Id("user-name"));
@@ -21,6 +23,8 @@ namespace TestAutomationPractise.PageObjects
         private IWebElement errorButton => Driver.FindElementWithWait(By.ClassName("error-button"));
 
         private IWebElement errorTextElement => Driver.FindElementWithWait(By.XPath("//*[@data-test ='error']"));
+
+        public InventoryPage InventoryPage => inventoryPage = inventoryPage ?? new InventoryPage(Driver);
 
         public LoginPage EnterUsername(string username)
         {

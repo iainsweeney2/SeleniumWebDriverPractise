@@ -23,3 +23,5 @@ C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomati
 C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\System.Security.AccessControl.xml
 C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\System.Security.Permissions.xml
 C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\WebDriver.Support.dll
+C:\Users\P124A60\Desktop\Automation Practise\TestAutomationPractise\TestAutomationPractise\bin\Debug\WebDriver.Support.xml

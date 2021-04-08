@@ -34,11 +34,68 @@ namespace TestAutomationPractise.Tests.LoginTests
                 .EnterUsername("standard_user")
                 .EnterPassword("secret_sauce_wrong")
                 .ClickLogin()
-                .GetErrorButtonVisibility(out bool buttonVisible);
+                .GetErrorButtonVisibility(out bool buttonVisible)
+                .GetErrorText(out string errorText);
 
             Assert.Multiple(() =>
             {
                 Assert.IsTrue(buttonVisible);
+                Assert.IsTrue(errorText == "Epic sadface: Username and password do not match any user in this service");
+            });
+        }
+
+        [Test]
+        public void LoginWithIncorrectLogin()
+        {
+            var page = NavigateToPage<LoginPage>(url);
+            page
+                .EnterUsername("standard_user_wrong")
+                .EnterPassword("secret_sauce")
+                .ClickLogin()
+                .GetErrorButtonVisibility(out bool buttonVisible)
+                .GetErrorText(out string errorText);
+
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(buttonVisible);
+                Assert.IsTrue(errorText == "Epic sadface: Username and password do not match any user in this service");
+            });
+        }
+
+        [Test]
+        public void LoginWithLockedOutUser()
+        {
+            var page = NavigateToPage<LoginPage>(url);
+            page
+                .EnterUsername("locked_out_user")
+                .EnterPassword("secret_sauce")
+                .ClickLogin()
+                .GetErrorButtonVisibility(out bool errorButtonVisible)
+                .GetErrorText(out string errorText);
+
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(errorButtonVisible);
+                Assert.IsTrue(errorText == "Epic sadface: Sorry, this user has been locked out.");
+            });
+        }
+
+        [Test]
+        public void LoginWithStandardUser()
+        {
+            var page = NavigateToPage<LoginPage>(url);
+            page
+                .EnterUsername("standard_user")
+                .EnterPassword("secret_sauce")
+                .ClickLogin()
+                .InventoryPage
+                .GetInventoryContainerVisibility(out bool inventoryContainerVisible);
+
+
+            Assert.Multiple(() =>
+            {
+                Assert.IsTrue(inventoryContainerVisible);
+                ////Assert.IsTrue(errorText == "Epic sadface: Sorry, this user has been locked out.");
             });
         }
     }

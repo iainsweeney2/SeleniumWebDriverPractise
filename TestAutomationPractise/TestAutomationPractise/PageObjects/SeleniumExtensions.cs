@@ -45,6 +45,20 @@ namespace TestAutomationPractise.PageObjects
             return null;
         }
 
+        public static IList<IWebElement> FindElementsWithWait(this IWebDriver driver, By by, int waitTime = 5000)
+        {
+            try
+            {
+                return new WebDriverWait(driver, TimeSpan.FromMilliseconds(waitTime)).Until(e => e.FindElements(by));
+            }
+            catch (Exception ex)
+            {
+                Console.Write(ex);
+            }
+
+            return null;
+        }
+
         public static void Click(this IWebDriver driver, IWebElement element, int retryCount = 5)
         {
             Retry(() =>
